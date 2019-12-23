@@ -10,8 +10,8 @@ Perceptron:
 -> 활성화 함수(activation function)
 """
 import math
-
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def step_function(x):
@@ -21,6 +21,8 @@ def step_function(x):
     :param x: numpy.ndarray
     :return: step(계단) 함수 출력(0 또는 1)로 이루어진 numpy.ndarray
     """
+    # result = [1 if x_i >0 else 0 for x_i in x]
+
     # result = []
     # for x_i in x:
     #     if x_i > 0:
@@ -28,6 +30,7 @@ def step_function(x):
     #     else:
     #         result.append(0)
     # return np.array(result)
+
     y = x > 0   # [False, False, ..., True]
     return y.astype(np.int) # [0, 0, ..., 1]
 
@@ -38,6 +41,15 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
+def relu(x):
+    """ ReLU(Rectified Linear Unit)
+        y = x, if x > 0
+          = 0, otherwise
+    """
+    return np.maximum(0, x)
+
+
+
 if __name__ == '__main__':
     x = np.arange(-3, 4)
     print('x =', x)
@@ -45,4 +57,24 @@ if __name__ == '__main__':
     #     print(step_function(x_i), end=' ')
     # print()
     print('y =', step_function(x))  # [0 0 0 0 1 1 1]
-    print(sigmoid(x))
+
+    # for x_i in x:
+    #     print(sigmoid(x_i), end=' ')
+    # print()
+    print('sigmoid =', sigmoid(x))
+
+    # step 함수, sigmoid 함수를 하나의 그래프에 출력
+    x = np.arange(-10, 10, 0.01)    # [-10, -9.99, ..., 0.98, 0.99]
+    plt.plot(x, step_function(x), label='Step function')
+    plt.plot(x, sigmoid(x), label='Sigmoid function')
+    plt.legend()
+    plt.show()
+
+    # sigmoid는 미분이 필요할 경우 사용하기 좋음
+    x = np.arange(-3, 4)
+    print('x =', x)
+    relus = relu(x)
+    print('relu =', relus)
+    plt.plot(x, relus)
+    plt.title('ReLU')
+    plt.show()
