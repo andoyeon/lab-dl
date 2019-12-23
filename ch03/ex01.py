@@ -23,7 +23,7 @@ def step_function(x):
     """
     # result = []
     # for x_i in x:
-    #     if x > 0:
+    #     if x_i > 0:
     #         result.append(1)
     #     else:
     #         result.append(0)
