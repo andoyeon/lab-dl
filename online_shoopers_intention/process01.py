@@ -6,10 +6,11 @@ print(online_shoppers_intention.shape)
 
 X = online_shoppers_intention.iloc[:, :-1]
 y = online_shoppers_intention.iloc[:, -1:]
+print('X[5] =', X[:5])
+print('y[5] =', y[:5])
 
-plt.
 
 # 결측치 확인
-print(online_shoppers_intention.isnull().sum())
+# print(online_shoppers_intention.isnull().sum())
 
 

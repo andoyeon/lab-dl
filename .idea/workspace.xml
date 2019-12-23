@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch03/ex02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/ex03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/ex04.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03/ex01.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch03/ex01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_shoopers_intention/process01.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_shoopers_intention/process01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +38,7 @@
       <recent name="C:\dev\lab-dl\online_shoopers_intention" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex04">
+  <component name="RunManager" selected="Python.process01">
     <configuration name="ex01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,9 +146,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.process01" />
         <item itemvalue="Python.ex04" />
         <item itemvalue="Python.ex01 (1)" />
-        <item itemvalue="Python.process01" />
         <item itemvalue="Python.ex03" />
         <item itemvalue="Python.ex02 (1)" />
       </list>
@@ -184,21 +180,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1577088958659">
+    <state width="1877" height="579" key="GridCell.Tab.0.bottom" timestamp="1577095009689">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1577088958659" />
-    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1577088958658">
+    <state width="1877" height="579" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1577095009689" />
+    <state width="1877" height="579" key="GridCell.Tab.0.center" timestamp="1577095009689">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1577088958658" />
-    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1577088958658">
+    <state width="1877" height="579" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1577095009689" />
+    <state width="1877" height="579" key="GridCell.Tab.0.left" timestamp="1577095009689">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1577088958658" />
-    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1577088958658">
+    <state width="1877" height="579" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1577095009689" />
+    <state width="1877" height="579" key="GridCell.Tab.0.right" timestamp="1577095009689">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1577088958658" />
+    <state width="1877" height="579" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1577095009689" />
   </component>
 </project>
