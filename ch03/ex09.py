@@ -21,3 +21,6 @@ def pixel_to_image(pixel, image_file):
 if __name__ == '__main__':
     # image_to_pixel(), pixel_to_image() 함수 테스트
     pass
+
+
+# (h, w, color)

@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch03/ex05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/ex06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/ex07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/ex08.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/ex09.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/sample_weight.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/t10k-images-idx3-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/t10k-labels-idx1-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/train-images-idx3-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/train-labels-idx1-ubyte.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03/ex09.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch03/ex09.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
