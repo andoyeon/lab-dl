@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch03/ex10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/kakao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/kim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/test1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03/test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch03/ex11.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03/ex08.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch03/ex08.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03/ex09.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch03/ex09.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03/ex10.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch03/ex10.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,28 +42,7 @@
       <recent name="C:\dev\lab-dl\online_shoopers_intention" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex10">
-    <configuration name="ex06" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="lab-dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch03" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch03/ex06.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ex11">
     <configuration name="ex08 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,13 +127,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ex11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch03/ex11.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex11" />
+        <item itemvalue="Python.ex08" />
         <item itemvalue="Python.ex10" />
         <item itemvalue="Python.ex09" />
-        <item itemvalue="Python.ex08" />
         <item itemvalue="Python.ex08 (1)" />
-        <item itemvalue="Python.ex06" />
       </list>
     </recent_temporary>
   </component>
@@ -200,21 +195,25 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="329" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1577335221073" />
-    <state width="1899" height="256" key="GridCell.Tab.0.bottom" timestamp="1577339488904">
+    <state width="1378" height="256" key="GridCell.Tab.0.bottom" timestamp="1577350733947">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1577339488904" />
-    <state width="1899" height="256" key="GridCell.Tab.0.center" timestamp="1577339488904">
+    <state width="1378" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1577350733947" />
+    <state width="1378" height="256" key="GridCell.Tab.0.center" timestamp="1577350733947">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="256" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1577339488904" />
-    <state width="1899" height="256" key="GridCell.Tab.0.left" timestamp="1577339488904">
+    <state width="1378" height="256" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1577350733947" />
+    <state width="1378" height="256" key="GridCell.Tab.0.left" timestamp="1577350733947">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="256" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1577339488904" />
-    <state width="1899" height="256" key="GridCell.Tab.0.right" timestamp="1577339488904">
+    <state width="1378" height="256" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1577350733946" />
+    <state width="1378" height="256" key="GridCell.Tab.0.right" timestamp="1577350733947">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="256" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1577339488904" />
+    <state width="1378" height="256" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1577350733947" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1577346937394">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1577346937394" />
   </component>
 </project>
