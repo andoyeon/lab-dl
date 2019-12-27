@@ -2,10 +2,10 @@
 ex11.py
 mini-batch
 """
+import pickle
 import numpy as np
 
 from ch03.ex01 import sigmoid
-from ch03.ex08 import init_network, accuracy
 from dataset.mnist import load_mnist
 
 
@@ -36,27 +36,31 @@ def softmax(X):
     return y
 
 
-def mini_batch(network, X_test, batch_size):
-    batch_starts = [s for s in range(0, len(X_test), batch_size)]
-    mini = [X_test[s:s+batch_size] for s in batch_starts]
-
+def forward(network, x):
     W1, W2, W3 = network['W1'], network['W2'], network['W3']
     b1, b2, b3 = network['b1'], network['b2'], network['b3']
 
-    y_pred = []
-    for mini in X_test:
-        a1 = mini.dot(W1) + b1
-        z1 = sigmoid(a1)
-        # 두번째 은닉층
-        a2 = z1.dot(W2) + b2
-        z2 = sigmoid(a2)
-        # 출력층
-        a3 = z2.dot(W3) + b3
-        y = softmax(a3)
+    z1 = sigmoid(x.dot(W1) + b1)    # 첫번째 은닉층 전파(propagation)
+    z2 = sigmoid(z1.dot(W2) + b2)   # 두번째 은닉층 전파(propagation)
+    y = softmax(z2.dot(W3) + b3)    # 출력층 전파(propagation)
+    return y
 
-        sample_pred = np.argmax(y)
-        y_pred.append(sample_pred)
-    return np.array(y_pred)
+
+def mini_batch(network, X, batch_size):
+    y_pred = np.array([]) # 예측값들을 저장할 배열
+    # batch_size 만큼씩 X의 데이터들을 나눠서 forward propagation(전파)
+    for i in range(0, len(X), batch_size):
+        X_batch = X[i:(i + batch_size)]
+        y_hat = forward(network, X_batch)   # (batch_size, 10) shape의 배열
+        predictions = np.argmax(y_hat, axis=1)
+        # 각 row에서 최대값의 인덱스 -> (batch_size,) 배열
+        y_pred = np.append(y_pred, predictions) # 예측값들을 결과 배열에 추가
+    return y_pred   # (len(X),) shape의 배열
+
+
+def accuracy(y_true, y_pred):
+    return np.mean(y_true == y_pred)
+
 
 if __name__ == '__main__':
     np.random.seed(2020)
@@ -72,15 +76,27 @@ if __name__ == '__main__':
 
     # (Train/Test)데이터 세트 로드.
     (X_train, y_train), (X_test, y_test) = load_mnist()
+    print('X_test shape:', X_test.shape)    # (10000, 784)
+    print('y_test shape:', y_test.shape)    # (10000,)
+    print(X_test[0])
+    print(y_test[0])
 
     # 신경망 생성(W1, b1, ...)
-    network = init_network()
+    with open('sample_weight.pkl', mode='rb') as file:
+        network = pickle.load(file)
+    print('network:', network.keys())
+    print('W1:', network['W1'].shape)
+    print('W2:', network['W2'].shape)
+    print('W3:', network['W3'].shape)
 
     batch_size = 100
     y_pred = mini_batch(network, X_test, batch_size)
-    print(y_pred[:5])
+    print('true[:10]', y_test[:10])
+    print('pred[:10]', y_pred[:10])
+    print('true[-10:]', y_test[-10:])
+    print('pred[-10:]', y_pred[-10:])
 
     # 정확도(accuracy) 출력
     acc = accuracy(y_test, y_pred)
-    print(acc)
+    print('정확도:', acc)
 
