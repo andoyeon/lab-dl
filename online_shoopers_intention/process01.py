@@ -18,6 +18,19 @@ print(dataset.info())
 month = set(dataset.loc[:, 'Month'])
 print(month)
 # {'Nov', 'Aug', 'Dec', 'Oct', 'Jul', 'June', 'Feb', 'Sep', 'Mar', 'May'}
+dataset.loc[dataset['Month'] == 'Jan'] = 0
+dataset.loc[dataset['Month'] == 'Feb'] = 1
+dataset.loc[dataset['Month'] == 'Mar'] = 2
+dataset.loc[dataset['Month'] == 'Apr'] = 3
+dataset.loc[dataset['Month'] == 'May'] = 4
+dataset.loc[dataset['Month'] == 'June'] = 5
+dataset.loc[dataset['Month'] == 'Jul'] = 6
+dataset.loc[dataset['Month'] == 'Aug'] = 7
+dataset.loc[dataset['Month'] == 'Sep'] = 8
+dataset.loc[dataset['Month'] == 'Oct'] = 9
+dataset.loc[dataset['Month'] == 'Nov'] = 10
+dataset.loc[dataset['Month'] == 'Dec'] = 11
+print(month)
 
 visitor_type = set(dataset.loc[:, 'VisitorType'])
 print(visitor_type)
