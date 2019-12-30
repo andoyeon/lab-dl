@@ -30,7 +30,7 @@ def _numerical_gradient(fn, x):
     함수 fn = fn(x0, x1, ..., xn)의
     각 편미분(partial differential) 값들의 배열을 리턴.
     """
-    x = x.astype(np.float)  # 실수 타입
+    x = x.astype(np.float, copy=False)  # 실수 타입
     gradient = np.zeros_like(x) # np.zeros(shape=x.shape)
     h = 1e-4    # 0.0001
     for i in range(x.size):
@@ -53,10 +53,10 @@ def numerical_gradient(fn, x):
     if x.ndim == 1:
         return _numerical_gradient(fn, x)
     else:
-        gradient = np.zeros_like(x)
+        gradients = np.zeros_like(x)
         for i, x_i in enumerate(x):
-            gradient[i] = numerical_gradient(fn, x_i)
-        return gradient
+            gradients[i] = numerical_gradient(fn, x_i)
+        return gradients
 
 
 def f3(x):
