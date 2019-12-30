@@ -25,7 +25,7 @@ def f2(x):
     return np.sum(x**2) # x0**2 + x1**2 + ...
 
 
-def numerical_gradient(fn, x):
+def _numerical_gradient(fn, x):
     """ 점 x=[x0, x1, ..., xn] 에서의
     함수 fn = fn(x0, x1, ..., xn)의
     각 편미분(partial differential) 값들의 배열을 리턴.
@@ -42,6 +42,21 @@ def numerical_gradient(fn, x):
         gradient[i] = (fh1 - fh2) / (2 * h)
         x[i] = ith_value
     return gradient
+
+
+def numerical_gradient(fn, x):
+    """ x = [
+            [x11 x12 x13, ...],
+            [x21 x22 x23, ...],
+            ...
+    ]"""
+    if x.ndim == 1:
+        return _numerical_gradient(fn, x)
+    else:
+        gradient = np.zeros_like(x)
+        for i, x_i in enumerate(x):
+            gradient[i] = numerical_gradient(fn, x_i)
+        return gradient
 
 
 def f3(x):
