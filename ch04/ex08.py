@@ -54,8 +54,7 @@ if __name__ == '__main__':
     lr = 0.1    # learning rate
     for _ in range(100):
         g1 = network.gradient(x, y_true)
-        print('g1 =', g1)
+        # print('g1 =', g1)
         network.W -= lr * g1    # W = W - lr * gradient
-        print('W =', network.W)
-        print('y_pred =', network.predict(x))
-        print('ce =', network.loss(x, y_true))
+        # print('W =', network.W)
+        print(f'y_pred = {network.predict(x)}, ce = {network.loss(x, y_true)}')
