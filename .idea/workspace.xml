@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch05/ex01_basic_layer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/ex02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/ex03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/ex04_sigmoid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/ex05_relu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/ex06_dot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/ex07_affine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/ex08_softmax_loss.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05/ex04_sigmoid.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/ex04_sigmoid.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +45,8 @@
       <recent name="C:\dev\lab-dl\online_shoopers_intention" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex03">
-    <configuration name="ex01_basic_layer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ex08_softmax_loss">
+    <configuration name="ex05_relu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,7 +58,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex01_basic_layer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex05_relu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -66,28 +67,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex02 (9)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab-dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/ex02 (9).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ex02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex06_dot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,7 +79,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex06_dot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex07_affine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,7 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex07_affine.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex09 (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex08" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,11 +117,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch04" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/ex09 (4).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch04/ex08.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex08_softmax_loss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch05" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex08_softmax_loss.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex03" />
-        <item itemvalue="Python.ex01_basic_layer" />
-        <item itemvalue="Python.ex02" />
-        <item itemvalue="Python.ex02 (9)" />
-        <item itemvalue="Python.ex09 (4)" />
+        <item itemvalue="Python.ex08_softmax_loss" />
+        <item itemvalue="Python.ex07_affine" />
+        <item itemvalue="Python.ex08" />
+        <item itemvalue="Python.ex06_dot" />
+        <item itemvalue="Python.ex05_relu" />
       </list>
     </recent_temporary>
   </component>
@@ -197,22 +198,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="329" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1577335221073" />
-    <state width="1899" height="233" key="GridCell.Tab.0.bottom" timestamp="1577953163508">
+    <state width="1899" height="296" key="GridCell.Tab.0.bottom" timestamp="1578038937138">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1577953163508" />
-    <state width="1899" height="233" key="GridCell.Tab.0.center" timestamp="1577953163508">
+    <state width="1899" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1578038937138" />
+    <state width="1899" height="296" key="GridCell.Tab.0.center" timestamp="1578038937138">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="233" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1577953163508" />
-    <state width="1899" height="233" key="GridCell.Tab.0.left" timestamp="1577953163508">
+    <state width="1899" height="296" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1578038937138" />
+    <state width="1899" height="296" key="GridCell.Tab.0.left" timestamp="1578038937137">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="233" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1577953163508" />
-    <state width="1899" height="233" key="GridCell.Tab.0.right" timestamp="1577953163508">
+    <state width="1899" height="296" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1578038937137" />
+    <state width="1899" height="296" key="GridCell.Tab.0.right" timestamp="1578038937138">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="233" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1577953163508" />
+    <state width="1899" height="296" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1578038937138" />
     <state width="1899" height="396" key="GridCell.Tab.1.bottom" timestamp="1577697632520">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -229,14 +230,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1899" height="396" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1577697632520" />
-    <state width="538" height="501" key="javadoc.popup.new" timestamp="1577680008005">
+    <state width="538" height="501" key="javadoc.popup.new" timestamp="1578017326185">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="538" height="501" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1577680008005" />
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1577951338968">
+    <state width="538" height="501" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1578017326185" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1578027502872">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1577951338968" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1578027502872" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
