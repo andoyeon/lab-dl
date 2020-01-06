@@ -48,6 +48,75 @@ Y = affine2.forward(Y)
 print('Y shape:', Y.shape)
 
 loss = last_layer.forward(Y, Y_true)
-print('loss =', loss)   # cross-entropy
+print('loss =', loss)   # 1.488   # cross-entropy
 print('y_pred =', last_layer.y_pred)    # [0.22573711 0.2607098  0.51355308]
 
+# gradient를 계산하기 위해서 역전파(back propagation)
+learning_rate = 0.1
+
+dout = last_layer.backward(1)
+print('dout 1 =', dout)
+
+dout = affine2.backward(dout)
+print('dout 2 =', dout)
+print('dW2 =', affine2.dW)
+print('db2 =', affine2.db)
+
+dout = relu.backward(dout)
+print('dout 3 =', dout)
+
+dout = affine1.backward(dout)
+print('dout 4 =', dout)   # 입력값 2개에 대한 gradient
+print('dW1 =', affine1.dW)
+print('db1 =', affine1.db)
+
+# 가중치/편향 행렬을 학습률과 gradient를 이용해서 수정
+W1 -= learning_rate * affine1.dW
+b1 -= learning_rate * affine1.db
+W2 -= learning_rate * affine2.dW
+b2 -= learning_rate * affine2.db
+
+# 수정된 가중치/편향 행렬들을 이용해서 다시 forward propagation
+Y = affine1.forward(X)
+Y = relu.forward(Y)
+Y = affine2.forward(Y)
+Y = last_layer.forward(Y, Y_true)
+print('loss =', Y)  # 1.217
+print('y_pred =', last_layer.y_pred)   # [0.29602246 0.25014373 0.45383381]
+
+# 미니 배치(mini-batch)
+X = np.random.rand(3, 2)
+Y_true = np.identity(3)   # [[1 0 0], [0 1 0], [0 0 1]]
+# forward -> backward -> W, b 수정 -> forward
+
+# forward
+Y = affine1.forward(X)
+Y = relu.forward(Y)
+Y = affine2.forward(Y)
+Y = last_layer.forward(Y, Y_true)
+print('loss =', Y)  # 1.200
+print('y_pred =', last_layer.y_pred)
+
+# backward
+dout = last_layer.backward(dout=0.1)
+print('dout 1 =', dout)
+dout = affine2.backward(dout)
+print('dout 2 =', dout)
+dout = relu.backward(dout)
+print('dout 3 =', dout)
+dout = affine1.backward(dout)
+print('dout 4 =', dout)
+
+# W, b 수정
+W1 -= learning_rate * affine1.dW
+b1 -= learning_rate * affine1.db
+W2 -= learning_rate * affine2.dW
+b2 -= learning_rate * affine2.db
+
+# forward
+Y = affine1.forward(X)
+Y = relu.forward(Y)
+Y = affine2.forward(Y)
+Y = last_layer.forward(Y, Y_true)
+print('loss =', Y)  # 1.164
+print('y_pred =', last_layer.y_pred)
