@@ -50,6 +50,46 @@ class TwoLayerNetwork:
         loss = self.last_layer.forward(Y_pred, Y_true)
         return loss
 
+    def accuracy(self, X, Y_true):
+        """ 입력 데이터 x와 실제 값(레이블) Y_true가 주어졌을 때,
+        예측 값들의 정확도를 계산해서 리턴.
+        accuracy = 예측이 실제값과 일치하는 개수 / 전체 입력 데이터 개수
+        X, Y_true는 모두 2차원 배열(행렬)라고 가정.
+        """
+        Y_pred = self.predict(X)
+        predictions = np.argmax(Y_pred, axis=1)
+        trues = np.argmax(Y_true, axis=1)
+        acc = np.mean(predictions == trues)
+        return acc
+
+    def gradient(self, X, Y_true):
+        """ 입력 데이터 X와 실제 값(레이블) Y_true가 주어졌을 때,
+        모든 레이어에 대해서 forward propagation을 수행한 후,
+        오차 역전파 방법을 이용해서 dW1, db1, dW2, db2를 계산하고 리턴. """
+        gradients = dict()
+        # 가중치/편향 행렬에 대한 gradient들을 저장할 딕셔너리
+
+        self.loss(X, Y_true)    # forward propagation
+
+        # back propagation
+        dout = 1
+        dout = self.last_layer.backward(dout)
+
+        # dict는 순서를 바꾸지 못하기 때문에 list로 만들어줌.
+        layers = list(self.layers.values())  # [affine1, relu, affine2]
+        layers.reverse()   # 리스트를 역순으로 바꿈. [affine2, relu, affine1]
+        for layer in layers:
+            dout = layer.backward(dout)
+
+        # 모든 레이어에 대해서 역전파가 끝나면,
+        # 가중치/편향 행렬들의 gradient를 찾을 수 있다.
+        gradients['W1'] = self.layers['affine1'].dW
+        gradients['b1'] = self.layers['affine1'].db
+        gradients['W2'] = self.layers['affine2'].dW
+        gradients['b2'] = self.layers['affine2'].db
+
+        return gradients
+
 
 if __name__ == '__main__':
     # MNIST 데이터 로드
@@ -81,3 +121,13 @@ if __name__ == '__main__':
 
     loss2 = neural_net.loss(X_train[:3], Y_train[:3])
     print('loss2 =', loss2)
+
+    # accuracy 메소드 테스트
+    print(Y_train[:10])
+    print(neural_net.accuracy(X_train[:10], Y_train[:10]))
+
+    # gradient 메소드 테스트
+    gradients = neural_net.gradient(X_train[:3], Y_train[:3])
+    for key in gradients:
+        print(gradients[key].shape, end=' ')
+    print()
