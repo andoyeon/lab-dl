@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch05/ex11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/ex12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/params.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/ex01_matplot3d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/ex02_sgd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/ex03_momentum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/ex04_adagrad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/ex05_adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab-dl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab-dl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/ex10_twolayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/ex10_twolayer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05/ex11.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/ex11.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +42,9 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ch03" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,8 +56,8 @@
       <recent name="C:\dev\lab-dl\online_shoopers_intention" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex11 (1)">
-    <configuration name="ex07_affine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ex01_matplot3d">
+    <configuration name="ex01_matplot3d" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,11 +65,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch05" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex07_affine.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex01_matplot3d.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex12 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +149,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch03" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch03/ex12.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch05/ex12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex01_matplot3d" />
+        <item itemvalue="Python.ex12 (1)" />
         <item itemvalue="Python.ex11 (1)" />
         <item itemvalue="Python.ex10_twolayer" />
         <item itemvalue="Python.ex09" />
-        <item itemvalue="Python.ex07_affine" />
-        <item itemvalue="Python.ex12" />
       </list>
     </recent_temporary>
   </component>
@@ -190,29 +201,42 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578275322370">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="341" y="299" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578396791055">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="341" y="299" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578396791055" />
     <state x="341" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1578275322370" />
     <state x="690" y="329" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577335221073">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="329" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1577335221073" />
-    <state width="1313" height="232" key="GridCell.Tab.0.bottom" timestamp="1578301475955">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="1110" y="132" key="#ex11_(1)" timestamp="1578327173266">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="1110" y="132" key="#ex11_(1)/0.0.1920.1040@0.0.1920.1040" timestamp="1578327173266" />
+    <state x="1058" y="70" key="FileChooserDialogImpl" timestamp="1578327097854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1058" y="70" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578327097854" />
+    <state width="1032" height="218" key="GridCell.Tab.0.bottom" timestamp="1578398166334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1032" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
     <state width="1313" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1578301475955" />
-    <state width="1313" height="232" key="GridCell.Tab.0.center" timestamp="1578301475955">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="1032" height="218" key="GridCell.Tab.0.center" timestamp="1578398166334">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1032" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
     <state width="1313" height="232" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1578301475955" />
-    <state width="1313" height="232" key="GridCell.Tab.0.left" timestamp="1578301475955">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="1032" height="218" key="GridCell.Tab.0.left" timestamp="1578398166334">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1032" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
     <state width="1313" height="232" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1578301475955" />
-    <state width="1313" height="232" key="GridCell.Tab.0.right" timestamp="1578301475955">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="1032" height="218" key="GridCell.Tab.0.right" timestamp="1578398166334">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1032" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
     <state width="1313" height="232" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1578301475955" />
     <state width="1899" height="396" key="GridCell.Tab.1.bottom" timestamp="1577697632520">
       <screen x="0" y="0" width="1920" height="1160" />
@@ -230,6 +254,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1899" height="396" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1577697632520" />
+    <state x="920" y="76" key="SettingsEditor" timestamp="1578397932013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="920" y="76" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578397932013" />
+    <state x="764" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578302287230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578302287230" />
     <state width="538" height="501" key="javadoc.popup.new" timestamp="1578276101313">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
