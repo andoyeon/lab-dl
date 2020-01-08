@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch06/ex06_rmsprop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch06/ex07_nesterov.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch06/ex08_compare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/ex09_weight_init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/optimizer_compare_mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/gradient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/multi_layer_net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/multi_layer_net_extend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/trainer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch06/ex05_adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch06/ex05_adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch06/ex08_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch06/ex08_compare.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,104 +44,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ch06" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\lab-dl\ch03" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\lab-dl\ch06" />
+      <recent name="C:\dev\lab-dl" />
       <recent name="C:\dev\lab-dl\ch03" />
       <recent name="C:\dev\lab-dl\dataset" />
       <recent name="C:\dev\lab-dl\online_shoopers_intention" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\lab-dl\ch03" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.ex07_nesterov">
-    <configuration name="ex03_momentum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab-dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex03_momentum.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ex04_adagrad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab-dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex04_adagrad.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ex05_adam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab-dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex05_adam.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ex06_rmsprop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab-dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex06_rmsprop.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ex09_weight_init">
     <configuration name="ex07_nesterov" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,13 +81,97 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ex08_compare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex08_compare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex09_weight_init" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex09_weight_init.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="optimizer_compare_mnist (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/optimizer_compare_mnist.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="optimizer_compare_mnist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/optimizer_compare_mnist.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex09_weight_init" />
+        <item itemvalue="Python.optimizer_compare_mnist" />
+        <item itemvalue="Python.optimizer_compare_mnist (1)" />
+        <item itemvalue="Python.ex08_compare" />
         <item itemvalue="Python.ex07_nesterov" />
-        <item itemvalue="Python.ex06_rmsprop" />
-        <item itemvalue="Python.ex05_adam" />
-        <item itemvalue="Python.ex03_momentum" />
-        <item itemvalue="Python.ex04_adagrad" />
       </list>
     </recent_temporary>
   </component>
@@ -211,26 +221,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1058" y="70" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578327097854" />
-    <state width="1899" height="230" key="GridCell.Tab.0.bottom" timestamp="1578462181060">
+    <state width="1899" height="225" key="GridCell.Tab.0.bottom" timestamp="1578473706599">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1032" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
-    <state width="1899" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1578462181060" />
-    <state width="1899" height="230" key="GridCell.Tab.0.center" timestamp="1578462181060">
+    <state width="1899" height="225" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1578473706599" />
+    <state width="1899" height="225" key="GridCell.Tab.0.center" timestamp="1578473706599">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1032" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
-    <state width="1899" height="230" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1578462181060" />
-    <state width="1899" height="230" key="GridCell.Tab.0.left" timestamp="1578462181060">
+    <state width="1899" height="225" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1578473706599" />
+    <state width="1899" height="225" key="GridCell.Tab.0.left" timestamp="1578473706599">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1032" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
-    <state width="1899" height="230" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1578462181060" />
-    <state width="1899" height="230" key="GridCell.Tab.0.right" timestamp="1578462181060">
+    <state width="1899" height="225" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1578473706599" />
+    <state width="1899" height="225" key="GridCell.Tab.0.right" timestamp="1578473706599">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1032" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578398166334" />
-    <state width="1899" height="230" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1578462181060" />
+    <state width="1899" height="225" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1578473706599" />
     <state width="1899" height="396" key="GridCell.Tab.1.bottom" timestamp="1577697632520">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -256,10 +266,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="764" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578302287230" />
-    <state width="538" height="501" key="javadoc.popup.new" timestamp="1578276101313">
+    <state width="538" height="501" key="javadoc.popup.new" timestamp="1578470963065">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="538" height="501" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1578276101313" />
+    <state width="538" height="501" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1578470963065" />
     <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1578027502872">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

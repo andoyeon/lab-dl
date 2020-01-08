@@ -47,7 +47,36 @@ if __name__ == '__main__':
         # 학습 데이터(X_train), 학습 레이블(Y_train)에서 미니 배치 크기만큼랜덤하게 데이터를 선택
         batch_mask = np.random.choice(train_size, batch_size)
         # 0 ~ 59,999 사이의 숫자들(train_size) 중에서 128(batch_size)개의 숫자를 임의로 선택
-        
+
+        # 학습에 사용할 미니 배치 데이터/레이블 선택
+        X_batch = X_train[batch_mask]
+        Y_batch = Y_train[batch_mask]
+        # 선택된 학습 데이터/레이블을 사용해서 gradient들을 계산
+        for key in optimizers:
+            # 각각의 최적화 알고리즘에 대해서 같은 작업을 반복
+            gradients = neural_nets[key].gradient(X_batch, Y_batch)
+            # 각각의 최적화 알고리즘의 파라미터 업데이트 기능을 사용
+            # 신경망이 가지고 있는 파라미터(W, b)와 위에서 계산한 gradient를 넘김.
+            optimizers[key].update(neural_nets[key].params, gradients)
+            # 미니 배치의 손실을 계산
+            loss = neural_nets[key].loss(X_batch, Y_batch)
+            train_losses[key].append(loss)
+
+        # 100번째 학습마다 계산된 손실을 출력
+        if i % 100 == 0:
+            print(f'===== training #{i} =====')
+            for key in optimizers:
+                print(key, ':', train_losses[key][-1])
+
+    # 각각의 최적화 알고리즘 별 손실 그래프
+    x = np.arange(iterations)   # x좌표 - 학습 횟수
+    for key, losses in train_losses.items():
+        plt.plot(x, losses, label=key)
+    plt.title('Losses')
+    plt.xlabel('# of Training')
+    plt.ylabel('loss')
+    plt.legend()
+    plt.show()
 
 
 
