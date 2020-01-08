@@ -48,11 +48,10 @@ if __name__ == '__main__':
     activations = dict()   # 데이터가 은닉층을 지났을 때 출력되는 값을 저장
 
     # 은닉층에서 사용하는 가중치 행렬
-    w = np.random.randn(node_num, node_num)
-    # a = x dot w
-    a = x.dot(w)
-    z = sigmoid(a)
-    activations[0] = z
+    # w = np.random.randn(node_num, node_num)
+    # # a = x dot w
+    # a = x.dot(w)
+    # z = sigmoid(a)
 
     for i in range(hidden_layer_size):
         if i != 0:
