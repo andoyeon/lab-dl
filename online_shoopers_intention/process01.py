@@ -42,8 +42,6 @@ dataset.loc[dataset['VisitorType'] == 'Other', 'VisitorType'] = 2
 print(dataset.loc[:, 'VisitorType'])
 
 
-selector = SelectKBest(f_classif, k=10)
-
 
 
 
