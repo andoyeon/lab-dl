@@ -17,13 +17,15 @@ def fn_derivative(x, y):
 
 
 if __name__ == '__main__':
+    # np.linspace : 시작점과 끝점을 균일 간격으로 나눈 점들을 생성
     x = np.linspace(-10, 10, 1000)  # x 좌표들
     y = np.linspace(-10, 10, 1000)  # y 좌표들
     # 3차원 그래프를 그리기 위해서
+    # np.meshgrid: 가로축과 세로축 점들을 나타내는 두 벡터를 인수로 받아 사각형 영역을 이루는 조합을 출력
     X, Y = np.meshgrid(x, y)
     Z = fn(X, Y)
 
-    fig = plt.figure()
+    fig = plt.figure()  # figure 생성
     ax = plt.axes(projection='3d')
     # projection 파라미터를 사용하려면 mpl_toolkits.mplot3d 패키지가 필요
     ax.contour3D(X, Y, Z,
