@@ -1,4 +1,5 @@
 """
+ex03_momentum.py
 파라미터 최적화 알고리즘 2) Momentum 알고리즘
 v: 속도(velocity)
 m: 모멘텀 상수(momentum constant)
