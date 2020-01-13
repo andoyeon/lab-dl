@@ -22,7 +22,9 @@ class MultiLayerNet:
     weight_decay_lambda : 가중치 감소(L2 법칙)의 세기
     """
     def __init__(self, input_size, hidden_size_list, output_size,
-                 activation='relu', weight_init_std='relu', weight_decay_lambda=0):
+                 activation='relu',
+                 weight_init_std='relu',
+                 weight_decay_lambda=0):
         self.input_size = input_size
         self.output_size = output_size
         self.hidden_size_list = hidden_size_list
@@ -153,7 +155,9 @@ class MultiLayerNet:
         # 결과 저장
         grads = {}
         for idx in range(1, self.hidden_layer_num+2):
-            grads['W' + str(idx)] = self.layers['Affine' + str(idx)].dW + self.weight_decay_lambda * self.layers['Affine' + str(idx)].W
+            grads['W' + str(idx)] = \
+                self.layers['Affine' + str(idx)].dW +\
+                self.weight_decay_lambda * self.layers['Affine' + str(idx)].W
             grads['b' + str(idx)] = self.layers['Affine' + str(idx)].db
 
         return grads
