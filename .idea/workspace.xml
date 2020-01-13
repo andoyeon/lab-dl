@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch06/ex12_weight_decay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch06/ex13_dropout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch06/hyperparameter_optimization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch07/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch07/ex01_convolution1d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch07/ex02_convolution2d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch07/ex03_padding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch07/ex04_conv_pad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch06/ex11_batch_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch06/ex11_batch_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/multi_layer_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/multi_layer_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/multi_layer_net_extend.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/multi_layer_net_extend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/trainer.py" afterDir="false" />
-    </list>
+    <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
