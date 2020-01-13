@@ -26,7 +26,7 @@ print(img_pixel[:, :, 0])
 
 # (3, 3, 3) 필터
 filter = np.zeros((3, 3, 3))
-filter[1, 0, 0] = 1.0
+filter[1, 1, 1] = 1.0
 transformed = convolve(img_pixel, filter, mode='same') / 255
 plt.imshow(transformed)
 plt.show()
