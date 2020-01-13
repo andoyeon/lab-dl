@@ -32,7 +32,6 @@ if __name__ == '__main__':
     conv_full = convolve(x, w, mode='full')  # x의 모든 원소가 동일하게 연산에 기여.
     print(conv_full)
     conv_same = convolve(x, w, mode='same')  # x의 크기와 동일한 리턴.
-    # before-padding 1
     print(conv_same)
 
     # scipy.signal.correlate() 함수
