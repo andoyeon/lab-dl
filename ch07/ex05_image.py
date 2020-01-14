@@ -25,8 +25,9 @@ plt.show()
 print(img_pixel[:, :, 0])
 
 # (3, 3, 3) 필터
-filter = np.zeros((3, 3, 3))
+filter = np.zeros((3, 3, 3))  # 필터 크기
 filter[1, 1, 0] = 1.0
-transformed = convolve(img_pixel, filter, mode='same') / 255
-plt.imshow(transformed)
+transformed = convolve(img_pixel, filter, mode='same')
+# transformed = correlate(img_pixel, filter, mode='same')
+plt.imshow(transformed.astype(np.uint8))
 plt.show()

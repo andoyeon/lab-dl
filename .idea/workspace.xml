@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a76587-aee8-4919-bac6-bdedbb1f5810" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ch07/ex06_image_index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch07/ex07_convolution3d.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/ex05_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/ex05_image.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
       <recent name="C:\dev\lab-dl\dataset" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex05_image">
+  <component name="RunManager" selected="Python.ex08_pooling">
     <configuration name="ex02_convolution2d" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,7 +74,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex03_padding" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex06_image_index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,7 +86,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/ex03_padding.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/ex06_image_index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,7 +95,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex04_conv_pad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex07__convolution3d" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/ex07__convolution3d.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex07_convolution3d" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,7 +128,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/ex04_conv_pad.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/ex07_convolution3d.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex05_image" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex08_pooling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,28 +149,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/ex05_image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ex11_batch_normalization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab-dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch06" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch06/ex11_batch_normalization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/ex08_pooling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex05_image" />
-        <item itemvalue="Python.ex04_conv_pad" />
-        <item itemvalue="Python.ex03_padding" />
+        <item itemvalue="Python.ex08_pooling" />
+        <item itemvalue="Python.ex07_convolution3d" />
         <item itemvalue="Python.ex02_convolution2d" />
-        <item itemvalue="Python.ex11_batch_normalization" />
+        <item itemvalue="Python.ex07__convolution3d" />
+        <item itemvalue="Python.ex06_image_index" />
       </list>
     </recent_temporary>
   </component>
@@ -211,30 +214,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1058" y="70" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578327097854" />
-    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1578924797609">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="511" key="GridCell.Tab.0.bottom" timestamp="1578980639202">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1515" height="295" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578921805678" />
     <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578924797609" />
-    <state width="1899" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1578907906922" />
-    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1578924797609">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="511" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1578980639202" />
+    <state width="1899" height="511" key="GridCell.Tab.0.center" timestamp="1578980639202">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1515" height="295" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578921805678" />
     <state width="1899" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578924797609" />
-    <state width="1899" height="363" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1578907906922" />
-    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1578924797609">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="511" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1578980639202" />
+    <state width="1899" height="511" key="GridCell.Tab.0.left" timestamp="1578980639202">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1515" height="295" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578921805678" />
     <state width="1899" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578924797609" />
-    <state width="1899" height="363" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1578907906922" />
-    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1578924797609">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="511" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1578980639202" />
+    <state width="1899" height="511" key="GridCell.Tab.0.right" timestamp="1578980639202">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1515" height="295" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578921805678" />
     <state width="1899" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578924797609" />
-    <state width="1899" height="363" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1578907906922" />
+    <state width="1899" height="511" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1578980639202" />
     <state width="1899" height="396" key="GridCell.Tab.1.bottom" timestamp="1577697632520">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -261,10 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="764" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578302287230" />
-    <state width="538" height="501" key="javadoc.popup.new" timestamp="1578898955751">
+    <state width="538" height="501" key="javadoc.popup.new" timestamp="1578970614236">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="538" height="501" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1578898955751" />
+    <state width="538" height="501" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1578970614236" />
     <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1578884208543">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
