@@ -63,10 +63,11 @@ if __name__ == '__main__':
     plt.imshow(img, cmap='gray')
     plt.show()
 
+    # backward 만들기
+
     # 다운로드 받은 이미지 파일을 ndarray로 변환해서 forward
     # jpg파일 축 순서 변경해야 함.
 
-    # backward 만들기
 
 
 
