@@ -44,7 +44,7 @@ if __name__ == '__main__':
     np.random.seed(115)
 
     # Convolution을 생성
-    # filter: (fn, c, fh, fw) = (1, 2, 4, 4)
+    # filter: (fn, c, fh, fw) = (1, 1, 4, 4)
     W = np.zeros((1, 1, 4, 4), dtype=np.uint8)  # c=1(MNIST 흑백 이미지), dtype: 8bit 부호 없는 정수
     W[0, 0, 1, :] = 1   # 다른 예시. W[0, 0, 1, 1] = 1
     b = np.zeros(1)
@@ -56,10 +56,10 @@ if __name__ == '__main__':
     input = x_train[0:1]  # 하나의 이미지만 선택하는 mini-batch
     print('input:', input.shape)  # (1, 1, 28, 28)
     out = conv.forward(input)
-    print('out:', out.shape)
+    print('out:', out.shape)  # (1, 1, 25, 25)
 
     img = out.squeeze()  # 차원을 1씩 줄여줌
-    print('img:', img.shape)
+    print('img:', img.shape)  # (25, 25)
     plt.imshow(img, cmap='gray')
     plt.show()
 
