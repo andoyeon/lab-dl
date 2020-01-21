@@ -157,7 +157,7 @@ for i in range(k):
     all_scores.append(loss)
 
 all_scores = np.array(all_scores)
-print(all_scores)
+print(all_scores)   # 4x200
 
 average_scores = all_scores.mean(axis=0)
 plt.plot(average_scores)
