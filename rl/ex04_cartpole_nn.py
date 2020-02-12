@@ -25,9 +25,8 @@ def render_policy_net(model, max_steps=200):
         if done:    # 게임이 종료됐으면,
             print(f'--- Finished after {step + 1} steps ---')
             break
-    if not done:   # max_steps번 반복하는 동안 게임이 종료되지 않았을 때
-        print('Still Arive ---')
-
+    if not done:  # max_steps번 반복하는 동안 게임이 종료되지 않았을 때
+        print('Still Alive!!!')
     # 게임 환경 종료
     env.close()
 
@@ -42,7 +41,7 @@ if __name__ == '__main__':
     # 신경망 요약 정보
     model.summary()
 
-    # 출력값은 카트를 왼쪽으로 밀 확률
+    # 출력값이 클수록 카트를 왼쪽으로 밀 확률이 높음.
 
     # Relu(Rectified Linear Unit)
     # f(x) = x, if x > 0
@@ -80,13 +79,13 @@ if __name__ == '__main__':
     # mini-batch를 사용해서 학습시킴.
     # mini-batch: 게임 환경을 여러개(50개)를 만들어서 신경망에서 사용
     n_envs = 50  # 학습에 사용할 게임 환경(environment)의 개수
-    n_iterations = 1000  # 학습 횟수
+    n_iterations = 5000  # 학습 횟수
 
     # 게임 환경 50개 생성
     environments = [gym.make('CartPole-v1') for _ in range(n_envs)]
     # 게임 환경 50개 초기화
     observations = [env.reset() for env in environments]
-    # gradient를 업데이트하는 바업ㅂ 선택
+    # gradient를 업데이트하는 방법 선택
     optimizer = keras.optimizers.RMSprop()
     # 손실 함수(loss function) 선택
     loss_fn = keras.losses.binary_crossentropy
@@ -98,18 +97,20 @@ if __name__ == '__main__':
         # Reinforcement Learning에서는 target이 없음!
         # loss를 계산하기 위한 target을 정의해야 할 필요가 있음.
         # target을 정의하기 위한 정책(policy):
-        #   angle > 0 이면 target = 0, angle < 0 이면 target = 1
+        #    angle > 0 이면 target = 0(왼쪽으로 밀 확률이 적어야 함)
+        #    angle < 0 이면 target = 1
         target_probs = np.array([
             ([0.] if obs[2] > 0 else [1.])
-            for observation in observations
-        ])
+            for obs in observations
+        ])  # 정책에 의해 결정된 target/label
+        # gradient(dL/dW, dL/db) 계산
         with tf.GradientTape() as tape:
-            loss_probs = model(np.array(observations))
-            loss = tf.reduce_mean(loss_fn(target_probs, loss_probs))
+            left_probs = model(np.array(observations))  # 신경망의 예측값
+            loss = tf.reduce_mean(loss_fn(target_probs, left_probs))
         print(f'Iteration #{iteration}: Loss={loss.numpy()}')
-        grads = tape.gradient(loss, model.trainable_variables)
+        grads = tape.gradient(loss, model.trainable_variables)  # model.trainabel_variables: 훈련시키는 변수들
         optimizer.apply_gradients(zip(grads, model.trainable_variables))
-        actions = (np.random.rand(n_envs, 1) > loss_probs.numpy()).astype(np.int32)
+        actions = (np.random.rand(n_envs, 1) > left_probs.numpy()).astype(np.int32)
         for idx, env in enumerate(environments):
             obs, reward, done, info = env.step(actions[idx][0])
             observations[idx] = obs if not done else env.reset()
