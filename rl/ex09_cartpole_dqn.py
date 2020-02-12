@@ -120,7 +120,7 @@ def main():
     state = env.reset()
     env.render()
     for step in range(2000):
-        action = epsilon_greedy_policy(model)
+        action = epsilon_greedy_policy(model, state)
         state, reward, done, info = env.step(action)
         if done:
             break
